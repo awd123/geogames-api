@@ -1,0 +1,20 @@
+{
+  "name": "geogames-api",
+  "version": "0.0.1",
+  "description": "API for geography games",
+  "main": "api.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/awd123/geogames-api.git"
+  },
+  "scripts": {
+    "start": "node api.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Austin Dunn",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.1"
+  }
+}
