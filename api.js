@@ -19,7 +19,8 @@ app.get('/flagList', (req, res) => {
   const filters = req.query;
 
   const filterCountries = country => {
-    if (filters.sovereignOnly && !country.sovereign) return false;
+    if (filters.sovereign === "yes" && !country.sovereign) return false;
+    if (filters.sovereign === "no" && country.sovereign) return false;
 
     if (filters.continent) {
       // filters.continent can be an array
